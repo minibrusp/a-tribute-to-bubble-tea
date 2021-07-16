@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  background-color: #FADCD9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  background-color: #F8AFA6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .header__img {
+  height: 100px;
+  width: 100px;
+  background: url("../img/bubble-tea-retro.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+header .header__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+header .header__text h1 {
+  margin: 0;
+  color: #F9F1F0;
+}
+
+header .header__text p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+#img-div {
+  background-color: black;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#img-div p {
+  color: #FADCD9;
+  text-align: center;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+#img-div img {
+  max-width: 400px;
+}
+
+#tribute-info .tribute-info__header {
+  background-color: #F8AFA6;
+  padding: 1rem;
+}
+
+#tribute-info .tribute-info__header h2 {
+  margin: 0;
+  text-align: center;
+  color: #F9F1F0;
+}
+
+#tribute-info .tribute-info__header h2 span {
+  color: black;
+  font-weight: 400;
+}
+
+#tribute-info .tribute-info__contents .tribute-info__content {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tribute-info .tribute-info__contents .tribute-info__content .tribute-info__list {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+#tribute-info .tribute-info__contents .tribute-info__content .tribute-info__list .tribute-info__list-item {
+  padding: 2rem 2rem 2rem 4.5rem;
+  line-height: 1.5;
+  background: url("../img/bubble-pink-icon.png") no-repeat top left;
+}
+
+#tribute-info .tribute-info__contents .tribute-info__content .tribute-info__list .tribute-info__list-item:hover {
+  font-weight: 700;
+  background-color: #F8AFA6;
+}
+
+#tribute-info .tribute-info__contents .tribute-info__content .quote {
+  background-color: #F8AFA6;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 500px;
+}
+
+#tribute-info .tribute-info__contents .tribute-info__content .quote blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+#tribute-info .tribute-info__contents .tribute-info__content .quote blockquote p {
+  margin: 0;
+}
+
+#tribute-info .tribute-info__contents .tribute-info__content img {
+  max-width: 150px;
+}
+
+footer {
+  margin: 2rem 1rem;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  position: relative;
+  color: #000000;
+  background-color: #F8AFA6;
+  padding: 1rem;
+}
+
+footer a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+footer a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 7px;
+  width: 100%;
+  background-color: #000000;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: .5s ease-in-out all;
+  transition: .5s ease-in-out all;
+}
+
+@media screen and (min-width: 800px) {
+  header {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+  }
+  header .header__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 150px;
+  }
+  header .header__text {
+    line-height: 1.2;
+  }
+  header .header__text h1 {
+    font-size: 3rem;
+  }
+  header .header__text p {
+    font-size: 1.7rem;
+  }
+  #img-div img {
+    max-width: 500px;
+  }
+  #tribute-info .tribute-info__header h2 {
+    font-size: 2.2rem;
+  }
+  #tribute-info .tribute-info__contents .tribute-info__content {
+    margin: 1rem 15vw;
+  }
+  #tribute-info .tribute-info__contents .tribute-info__content img {
+    max-width: 250px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #tribute-info .tribute-info__contents {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    margin: 1rem 2vw;
+  }
+  #tribute-info .tribute-info__contents .tribute-info__content {
+    margin: 0;
+  }
+  #img-div img {
+    max-width: 600px;
+  }
+}
