@@ -147,6 +147,7 @@ header .header__text p {
 }
 
 #tribute-info .tribute-info__contents .tribute-info__content .tribute-info__list {
+  margin: 0;
   padding-left: 0;
   list-style-type: none;
 }
@@ -162,6 +163,14 @@ header .header__text p {
   background-color: #F8AFA6;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+}
+
+#tribute-info .tribute-info__contents .tribute-info__content .tribute-info__list .tribute-info__list-item:first-of-type:hover {
+  border-top: none;
+}
+
+#tribute-info .tribute-info__contents .tribute-info__content .tribute-info__list .tribute-info__list-item:last-of-type:hover {
+  border-bottom: none;
 }
 
 #tribute-info .tribute-info__contents .tribute-info__content .quote {
