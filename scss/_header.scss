@@ -1,6 +1,9 @@
 header {
     background-color: $dustyRose;
     display: flex;
+    max-width: 300px;
+    margin: 3rem auto;
+    border: 1px solid black;
 
     .header__img {
         height: 100px;

@@ -4,12 +4,14 @@
         top: 0;
         left: 0;
         padding: 2rem;
+        max-width: 600px;
+        overflow: hidden;
 
         .header__img {
             position: absolute;
             top: 0;
             left: 0;
-            height: 150px;
+            height: 160px;
             width: 150px;
         }
 
@@ -34,6 +36,8 @@
 
     #tribute-info {
         .tribute-info__header {
+            max-width: 600px;
+
             h2 {
                 font-size: 2.2rem;
             }
